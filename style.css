@@ -1,0 +1,240 @@
+/* Universal styling for body with light background */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Light gray background */
+    color: #333333; /* Dark text for readability */
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Header styling with light background and neon-red text */
+header {
+    background-color: #ffffff; /* White background */
+    color: #ff073a; /* Neon red text */
+    text-align: left; /* Align text to the left */
+    padding: 20px;
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 0 15px rgba(255, 7, 58, 0.75); /* Soft glowing red edges */
+    animation: slideDown 1s ease-in-out;
+}
+
+/* Logo styling */
+.logo {
+    width: 50px; /* Set the width of the logo */
+    height: 50px; /* Set the height of the logo */
+    margin-right: 15px; /* Space between logo and title */
+}
+
+/* Navigation styling with flexbox */
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allows wrapping when space is limited */
+    gap: 15px; /* Adds space between each link */
+    margin: 20px 0;
+}
+
+/* Rounded rectangle buttons with red to blue gradient */
+nav a {
+    margin: 10px;
+    text-decoration: none;
+    color: #00ffff; /* Cyan text inside button */
+    padding: 10px 20px;
+    border-radius: 25px; /* Rounded rectangle */
+    background: linear-gradient(135deg, #ff073a, #0000ff); /* Gradient from red to blue */
+    box-shadow: 0 0 10px rgba(255, 7, 58, 0.75), 0 0 20px rgba(255, 7, 58, 0.5); /* Glowing effect */
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    white-space: nowrap; /* Prevents text from breaking into multiple lines */
+}
+
+/* Hover effect for buttons with increased glow */
+nav a:hover {
+    background: linear-gradient(135deg, #ff3b5b, #00aaff); /* Lighter gradient on hover */
+    color: #00ffff; /* Keep text cyan */
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 7, 58, 0.9), 0 0 30px rgba(255, 7, 58, 0.6); /* Stronger glow on hover */
+}
+
+/* Section styling with light background and soft-glow edges */
+section {
+    padding: 20px;
+    background-color: #ffffff; /* White background */
+    border-radius: 20px;
+    margin: 20px;
+    color: #333333; /* Dark text */
+    box-shadow: 0 0 20px rgba(255, 7, 58, 0.5); /* Glowing edges for sections */
+}
+
+/* About section styling */
+.about-section {
+    padding: 20px;
+    background-color: #ffffff; /* White background */
+    border-radius: 20px;
+    margin: 20px;
+    color: #333333; /* Dark text */
+    box-shadow: 0 0 20px rgba(255, 7, 58, 0.5); /* Glowing edges for sections */
+}
+
+/* About header styling */
+.about-header {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between header and image */
+}
+
+/* Circular profile image styling */
+.profile-image {
+    width: 100px; /* Set desired width */
+    height: 100px; /* Set desired height */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image covers the container */
+    margin-left: 15px; /* Space between the heading and the image */
+    box-shadow: 0 0 10px rgba(255, 7, 58, 0.5); /* Glowing effect for the image */
+}
+
+/* Adjusting the header */
+h2 {
+    margin: 0; /* Remove default margin */
+}
+
+/* Scrollable frames container */
+.scrollable-frames {
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    padding: 10px;
+    scroll-behavior: smooth; /* Smooth scroll */
+}
+
+/* Frame styling */
+.frame {
+    background-color: #222; /* Dark background for frames */
+    border-radius: 10px;
+    width: 300px; /* Set width of each frame */
+    margin-right: 20px; /* Space between frames */
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(255, 7, 58, 0.5); /* Glowing effect */
+    flex: none; /* Prevent frames from shrinking */
+    transition: transform 0.3s ease; /* Transition for motion blur */
+}
+
+/* Logo inside frames */
+.frame-logo {
+    width: 50px; /* Width of the logo in frames */
+    height: 50px; /* Height of the logo in frames */
+    display: block; /* Make it block-level */
+    margin: 0 auto 10px; /* Center the logo */
+}
+
+/* Heading inside frames */
+h3 {
+    text-align: center; /* Center the heading */
+    margin-bottom: 10px; /* Space below heading */
+}
+
+/* Motion blur effect on scroll */
+.scrollable-frames::-webkit-scrollbar {
+    height: 8px; /* Scrollbar height */
+}
+
+.scrollable-frames::-webkit-scrollbar-thumb {
+    background: rgba(255, 7, 58, 0.5); /* Scrollbar color */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.scrollable-frames::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 7, 58, 0.8); /* Darker on hover */
+}
+
+.scrollable-frames:hover .frame {
+    transform: translateZ(0) scale(1.05); /* Slight scale on hover for motion blur effect */
+}
+
+/* Form styling */
+form {
+    background-color: #222; /* Dark background for the form */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 7, 58, 0.5); /* Glowing effect for the form */
+}
+
+/* Input and textarea styling */
+input[type="text"], input[type="email"], textarea {
+    width: calc(100% - 20px); /* Full width minus padding */
+    padding: 10px;
+    border: 1px solid #ff073a; /* Neon red border */
+    border-radius: 5px;
+    background-color: #333; /* Dark background for inputs */
+    color: #ffffff; /* White text */
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    outline: none;
+    border: 1px solid #ff073a; /* Change border color on focus */
+    box-shadow: 0 0 10px rgba(255, 7, 58, 0.5); /* Glowing effect on focus */
+}
+
+/* Button styling */
+button {
+    background-color: #ff073a; /* Neon red */
+    color: #00ffff; /* Cyan text */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background-color: #00aaff; /* Transition to blue on hover */
+    box-shadow: 0 0 10px rgba(255, 7, 58, 0.9); /* Glowing effect on hover */
+}
+
+/* Soft animation keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeUp {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Footer styling with light background and neon-red glow */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff; /* White background */
+    color: #ff073a; /* Neon-red text */
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0 0 15px rgba(255, 7, 58, 0.75); /* Soft glowing red edges */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 40px;
+    animation: fadeIn 1s ease-in-out; /* Fade-in effect for footer */
+}
