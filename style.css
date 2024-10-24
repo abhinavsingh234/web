@@ -60,16 +60,51 @@ section {
     box-shadow: 0 0 20px rgba(0, 255, 115, 0.5); /* Glowing edges for sections */
 }
 
-/* Presentation styling */
-.presentation {
-    margin: 20px 0;
+/* About section styling */
+.about-section {
+    padding: 20px;
+    background: linear-gradient(135deg, #0d3b0d, #000000); /* Greenish-black gradient */
+    border-radius: 20px;
+    margin: 20px;
+    color: #e0e0e0;
+    box-shadow: 0 0 20px rgba(0, 255, 115, 0.5); /* Glowing edges for sections */
 }
 
-.presentation img {
-    width: 100%; /* Responsive image */
-    max-width: 600px; /* Maximum width for larger displays */
+/* About header styling */
+.about-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Circular profile image styling */
+.profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 15px;
+    box-shadow: 0 0 10px rgba(0, 255, 115, 0.5); /* Glowing effect for the image */
+}
+
+/* Scrollable frames container */
+.scrollable-frames {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px;
+    scroll-behavior: smooth;
+}
+
+/* Frame styling */
+.frame {
+    background-color: #002200; /* Dark green background for frames */
     border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 255, 115, 0.5); /* Glowing effect for images */
+    width: 300px;
+    margin-right: 20px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 255, 115, 0.5); /* Glowing effect */
+    flex: none;
+    transition: transform 0.3s ease;
 }
 
 /* Form styling */
